@@ -99,3 +99,19 @@ button:hover {
 .button a {
     color: rgba(0, 136, 169, 1);
 }
+
+.search{
+    background: rgba(0, 136, 169, 1);
+	margin: 10px;
+	align-items: center;
+	color: white;
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+    border-radius: 20px;
+}
+
+.relleno{
+    background-color: white;
+
+}
