@@ -1,58 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/estilos.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>AirBnB</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            body {
-            font-family: Arial, Helvetica, sans-serif;
-            }
-            /* Style the header */
-            .header {
-                color: #fff;
-                line-height: 200px;
-                height: 1000px;
-                text-align: center;
-                vertical-align: middle;
-                text-shadow: #111 0px 0px 10px;
-            }
-            /*Set the background image*/
-            .background-image {
-                background-image: url(background-photo.jpg);
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-                background-color: #464646;
-            }
-            button {
-            display: inline-block;
-            border: none;
-            border-radius: 50%;
-            margin: 0;
-            position: absolute;
-            top: 15px;
-            right: 10px;
-            cursor: pointer;
-            }
-
-            #close-image img {
-                display: block;
-                height: 45px;  
-                width: 45px;
-                }
-        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, inicial-scale=1">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="background-image header">
-            <img src="C:\Users\juanc\OneDrive - Universidad de Las Palmas de Gran Canaria\2ºGCID\Fundamentos del Marketing\Trabajo 1\logo.png" style="position: absolute; top: 20px; left: 60px;" width="100" height="30" title="AirBnB logo">
-            <button id="close-image" onclick="window.location.href='registrarse.html'"><img src="https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png"></button>
+        <header>
+            <img class="logo" src="logo.png" alt="logo" height="45px" width="100px">
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Alojamientos</a></li>
+                    <li><a href="#">Alquileres</a></li>
+                    <li><a href="#">Presentación</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="registrarse.html"><button>Registrarse</button></a>
+        </header>
+        <div class="wrapper">
+            <img src="cookie.png" alt="cookie">
+            <div class="content">
+                <h1 style="color: #fff;">Cookies Consent</h1>
+                <p>This website use cookies to ensure you get the best experience on our website.</p>
+                <div class="button">
+                    <button class="item">I understand</button>
+                    <a href="#" class="item">Learn More</a>
+                </div>
+            </div>
         </div>
+        <script>
+            const cookieBox = document.querySelector(".wrapper"),
+            acceptBtn = cookieBox.querySelector(".button button");
+
+            acceptBtn.onclick = ()=>{
+                //setting cookie for a month, after one month cookie will be expired automatically
+                document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
+                if(document.cookie){
+                    cookieBox.classList.add("hide");//hide cookie box once cookie is set
+                }else{
+                    alert("Cookie can't be set!"); //if cookie can't be set then alert an error
+                }
+            }
+            //hide the cookie box once accepted
+            /*let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal");
+            checkCookie != -1 ? cookieBox.classList.add("hide"): cookieBox.classList.remove("hide");*/
+        </script>
     </body>
 </html>
