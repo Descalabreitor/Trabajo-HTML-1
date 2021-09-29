@@ -31,30 +31,42 @@
             </div>
         </div>
         <form action="/action_page.php">
-            <div class="relleno">
             <div class="search"> 
             <form>
                 <label for="ci">Check-in:</label>
                 <input type="date" id="ci" name="Check-in">
                 <label for="co">Check-out:</label>
                 <input type="date" id="co" name="Check-out">
-                <label for="browsers">A donde vas?</label>
-                <input list="browsers" name="browser">
-                  <datalist id="browsers">
-                <option value="SPAIN">
-                <option value="BRASIL">
-                <option value="USA">
-                <option value="JAPAN">
-                <option value="CHINA">
-                  </datalist>
-                  <label for="quantity"> Numero de adultos:</label>
-                 <input type="number" id="quantity" name="quantity" min="1" max="10">
-                  <label for="quantity"> Numero de niños:</label>
-                 <input type="number" id="quantity" name="quantity" min="1" max="10">
+                <select name = "Destino">
+                    <option selected value = "0"> Elige un destino.</option>
+                    <optgroup label="Islas Canarias">
+                        <option value ="1">Gran Canaria</option>
+                        <option value ="2">Tenerife</option>
+                    </optgroup>
+                    <optgroup label="Baleares">
+                        <option value ="3">Palma de Mallorca</option>
+                        <option value ="4">Ibiza</option>
+                    </optgroup>
+                    <optgroup label="Cataluña">
+                        <option value ="5">Barcelona</option>
+                    </optgroup>
+                    <optgroup label="Galicia">
+                        <option value ="6">Santiago de Compostela</option>
+                        <option value ="7">Lugo</option>
+                    </optgroup>
+                    <optgroup label="Pais Vasco">
+                        <option value ="8">Bilbao</option>
+                        <option value ="9">San Sebastian</option>
+                        <option value="10">Victoria-Gasteiz</option>
+                    </optgroup>
+                </select>
+                <label for="quantity"> Adultos:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
+                <label for="quantity"> Niños(Hasta 12 años):</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10">
                 <input type="submit" value="Buscar">
             </form>
             </div>
-        </div>
         <script>
             const cookieBox = document.querySelector(".wrapper"),
             acceptBtn = cookieBox.querySelector(".button button");
