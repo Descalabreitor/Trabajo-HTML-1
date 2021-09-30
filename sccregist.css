@@ -6,20 +6,23 @@
 	  outline: none;
 	}
 	body {
-	font-family: Arial;
-	background-color: transparent;
-	padding: 50px;
-
-	background-image: url("https://fondosmil.com/fondo/31180.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-
-
-
-
+		font-family: "Montserrat", sans-serif;
+		background-color: transparent;
+		padding: 50px;
 	
-	}
+		background-image: url("https://a0.muscache.com/im/pictures/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg?im_w=2560");
+	
+	
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	
+	
+	
+	
+		
+		}
 	.login {
 	margin: 20px auto;
 	width: 300px;
@@ -98,3 +101,41 @@
 	  margin-top: 12px;
 
 	}
+
+
+	.input-iconopass {
+        background-image: url('https://image.flaticon.com/icons/png/512/102/102643.png');
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 20px;
+        display: flex;
+        align-items: center;
+        width: 250px;
+        padding-left: 28px;
+        height: 30px;
+		margin-bottom: 10px;
+		margin-top: 20px;
+      }
+
+
+	  .input-icono {
+        background-image: url('https://image.flaticon.com/icons/png/512/16/16363.png');
+        background-repeat: no-repeat;
+        background-position: 4px center;
+        background-size: 20px;
+        display: flex;
+        align-items: center;
+        width: 250px;
+        padding-left: 28px;
+        height: 30px;
+		margin-bottom: 10px;
+
+      }
+      .input-icono input {
+        width: 100%;
+        font-size: 1.5em;
+        border: none;
+      }
+      .input-icono input:focus {
+        outline: none;
+      }
