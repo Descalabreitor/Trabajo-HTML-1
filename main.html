@@ -72,17 +72,10 @@
             acceptBtn = cookieBox.querySelector(".button button");
 
             acceptBtn.onclick = ()=>{
-                //setting cookie for a month, after one month cookie will be expired automatically
-                document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
-                if(document.cookie){
-                    cookieBox.classList.add("hide");//hide cookie box once cookie is set
-                }else{
-                    alert("Cookie can't be set!"); //if cookie can't be set then alert an error
-                }
+                console.log("Cookies accepted!!");
+                cookieBox.classList.add("hide");
             }
-            //hide the cookie box once accepted
-            /*let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal");
-            checkCookie != -1 ? cookieBox.classList.add("hide"): cookieBox.classList.remove("hide");*/
+            
         </script>
     </body>
 </html>
