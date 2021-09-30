@@ -105,7 +105,7 @@ button:hover {
 }
 
 .search{
-    background: #566573 ;
+    background: #24252A;
 	margin: 10px;
 	align-items: center;
 	color: white;
@@ -114,14 +114,15 @@ button:hover {
 	text-align: center;
     border-radius: 20px;
     justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
 }
 
 input[type = date]{
-    background-color: #566573 ;
+    background-color: #24252A ;
 }
 
 input[type = submit]{
-    background-color: #566573 ;
+    background-color: #24252A ;
     font-family:"Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -130,12 +131,12 @@ input[type = submit]{
 }
 
 input[type = number]{
-    background-color: #566573 ;
+    background-color: #24252A ;
 }
 
 
 select{
-    background-color: #566573 ;
+    background-color: #24252A ;
     font-family:"Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
