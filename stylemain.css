@@ -22,8 +22,12 @@ header {
     background: #24252A;
 }
 
-body {
-    background-color:white; 
+body { 
+    background-image: url("https://a0.muscache.com/im/pictures/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg?im_w=2560");
+    background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
 }
 
 .logo {
