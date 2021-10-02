@@ -97,8 +97,15 @@ ul.slider li:first-child{
 
 }
 
+<<<<<<< Updated upstream
 ul.slider li:target{
   opacity: 1;
+=======
+input[type = date]{
+    background-color: #24252A ;
+    color : white ;
+}
+>>>>>>> Stashed changes
 
 }
 
